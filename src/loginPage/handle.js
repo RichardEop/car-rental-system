@@ -1,6 +1,10 @@
 
 
-
+/**
+ * Constructs the configuration used to connect the web app to Firebase
+ * @author Richard Peoples
+ * @data 2026-03-11
+ */
 const firebaseConfig = {
   apiKey: "",
   authDomain: "",
@@ -10,7 +14,7 @@ const firebaseConfig = {
   appId: "1:58"
 };
 
-
+//Initialize app using config
 firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore(); 
@@ -23,7 +27,11 @@ const auth = firebase.auth();
 
 
 
-
+/**
+ * Allows the user to create a new account
+ * @author Richard Peoples
+ * @data 2026-03-11
+ */
 async function signup() {
     const username = document.getElementById("signupUser").value;
     const password = document.getElementById("signupPass").value;
@@ -58,7 +66,11 @@ async function signup() {
     }
 }
 
-
+/*
+ * Allows the user to log into a pre-existing account
+ * @author Richard Peoples
+ * @data 2026-03-11
+ */
 async function login() {
 
     const username = document.getElementById("loginUser").value;
@@ -167,4 +179,5 @@ function login() {
         alert("Invalid password");
     }
 }
+
 **/
