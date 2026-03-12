@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Rentals - Login</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+<script src="handle.js"></script>
+</head>
+<body>
+
+<h1 class="page-title" style="color: #fff; font-size: 48px; text-align: center;">Car Rentals</h1>
+
+<div class="container">
+    <h2>Login</h2>
+    <input id="loginUser" placeholder="Username or Email">
+    <input id="loginPass" type="password" placeholder="Password">
+    <button class="login-btn" onclick="login()">Login</button>
+    <p style="text-align: center;">Already have an account?</p>
+    <!-- back to signup -->
+    <button class="signup-btn" onclick="window.location.href='signup.html'">Sign Up</button>
+</div>
+
+<script src="handle.js"></script>
+
+
+
+</script>
+</body>
+</html>

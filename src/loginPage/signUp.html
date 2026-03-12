@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Rentals - Sign Up</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcryptjs/2.4.3/bcrypt.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-firestore-compat.js"></script>
+<script src="handle.js"></script>
+</head>
+<body>
+
+<div class="container signup-container">
+    <h2>Sign Up</h2>
+    <input id="signupUser" placeholder="Username or Email">
+    <input id="signupPass" type="password" placeholder="Password">
+    <input id="signupPassConfirm" type="password" placeholder="Confirm Password">
+    <button class="signup-btn2" onclick="
+        const pass = document.getElementById('signupPass').value;
+        const confirm = document.getElementById('signupPassConfirm').value;
+        if(pass !== confirm){ 
+            alert('Passwords do not match!'); 
+        } else { 
+            signup();
+        }
+    ">Sign Up</button>
+
+    
+    <button class="login-btn" onclick="window.location.href='login.html'">Back to Login</button>
+</div>
+
+<script src="handle.js"></script>
+
+
+</body>
+</html>
